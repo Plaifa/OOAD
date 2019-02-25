@@ -1,0 +1,38 @@
+
+.combo-box {
+  -fx-background-color: #e0e0e0;
+  -fx-background-radius: 0.5em;
+  -fx-font-size: 16px;
+
+}
+
+.combo-box .arrow{
+    -fx-mark-color:  #2a363b; // arrow color
+    -fx-padding: 0.4em  /* 4 4 4 4 */
+}
+
+.combo-box .label{
+    -fx-text-fill: #2a363b;
+}
+
+
+.combo-box-popup .list-view{
+  -fx-background-color: #e0e0e0;
+  -fx-background-radius: 0.5em;
+
+}
+
+.list-cell{
+    -fx-background-color: #e0e0e0;
+    -fx-font-size: 16px;
+}
+
+.list-cell:hover {
+    //-fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color:#d3d3d3;
+    -fx-opacity: 0.9;
+    -fx-padding: 0.5em;
+
+}
+
+

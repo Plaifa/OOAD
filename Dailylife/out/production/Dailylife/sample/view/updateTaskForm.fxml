@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UpdateTaskController">
+   <children>
+      <Pane layoutY="-6.0" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #E84A5F;">
+         <children>
+            <Label layoutX="218.0" layoutY="28.0" text="Update Task" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="closeBtn" fitHeight="15.0" fitWidth="15.0" layoutX="571.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="updTaskField" layoutX="150.0" layoutY="140.0" prefHeight="40.0" prefWidth="300.0" promptText="Task" style="-fx-background-color: #efefeF;" />
+      <TextField fx:id="updDescriptionField" layoutX="150.0" layoutY="200.0" prefHeight="40.0" prefWidth="300.0" promptText="Description" style="-fx-background-color: #efefef;" />
+      <Button fx:id="updateTaskBtn" layoutX="150.0" layoutY="255.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #E84A5F;" text="Update Task" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddTaskFormController">
+   <children>
+      <Pane layoutY="-6.0" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #E84A5F;">
+         <children>
+            <Label layoutX="239.0" layoutY="28.0" text="Add Task" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="closeBtn" fitHeight="15.0" fitWidth="15.0" layoutX="571.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/1024px-Close,_Web_Fundamentals.svg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="taskField" layoutX="150.0" layoutY="140.0" prefHeight="40.0" prefWidth="300.0" promptText="Task" style="-fx-background-color: #efefeF;" />
+      <TextField fx:id="descriptionField" layoutX="150.0" layoutY="200.0" prefHeight="40.0" prefWidth="300.0" promptText="Description" style="-fx-background-color: #efefef;" />
+      <Button fx:id="saveTaskBtn" layoutX="150.0" layoutY="255.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #E84A5F;" text="Save Task" textFill="WHITE" />
+      <Label fx:id="successLabel" layoutX="239.0" layoutY="315.0" prefHeight="17.0" prefWidth="122.0" text="Add Task Successfully!" textFill="#e84a5f" visible="false" />
+      <Button fx:id="tasksListButton" layoutX="476.0" layoutY="348.0" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #fceaed;" text="My Task" textFill="#2a363b" />
+   </children>
+</AnchorPane>

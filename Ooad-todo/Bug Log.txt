@@ -1,0 +1,5 @@
+1. User ID can't fetch in addTaskFormController so the task can't update in database.
+2. My Task doesn't count current todos (continuous from 1. cuz it get from database)
+
+To do next
+1. In the clip, it show only delete and update task info so we must design how to check done task ourselves.
